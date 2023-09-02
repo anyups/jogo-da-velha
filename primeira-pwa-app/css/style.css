@@ -1,19 +1,63 @@
-body{
-    font-family: sans-serif;
+body {
+    background: rgb(139, 69, 19);
+    background: linear-gradient(90deg, rgba(139, 69, 19, 1) 0%, rgba(210, 180, 140, 1) 55%, rgba(245, 245, 220, 1) 100%);
 }
 
-html, .fullscreen{
-    display: flex;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+h1 {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 4vw;
+    font-family: 'Comfortaa', cursive;
+    color: rgb(82, 35, 2);
 }
 
-.container{
-    margin: auto;
+.game-board {
+    border: solid 3px rgb(120, 50, 0);
+    border-radius: 10px;
+    width: 50%;
+    max-width: 300px;
+    margin: 2% auto;
+    font-family: 'Indie Flower', cursive;
+    box-shadow: 10px 9px 22px -2px rgba(75, 32, 11, 0.86);
 }
 
-.title{
-    font-size: 3rem;
+.square {
+    width: 31%;
+    padding-top: 25%;
+    border: 1px solid rgba(87, 38, 2, 0.815);
+    display: inline-block;
+    text-align: center;
+    font-size: 6vw;
+    cursor: pointer;
+    background-color: rgba(225, 176, 123, 0.193);
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+    transform: scale(1);
+}
+
+.square:hover {
+    background-color: rgba(149, 80, 43, 0.267);
+}
+
+.square:active {
+    transform: scale(1);
+}
+
+@media (max-width: 600px) {
+
+    h1{
+        font-size: 5vw;
+    }
+
+    .game-board {
+        width: 75%; 
+        padding-bottom: 0%; 
+        max-width: none;
+    }
+
+    .square {
+        width: 30%;
+        padding-top: 30%; 
+        font-size: 6vw;
+    }
 }
