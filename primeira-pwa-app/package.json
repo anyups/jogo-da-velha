@@ -1,12 +1,13 @@
 {
-  "name": "primeira-pwa-app",
+  "name": "jogo-da-velha",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Jogo da velha",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "serve ."
   },
-  "author": "",
+  "author": "Any Santos",
   "license": "ISC",
   "dependencies": {
     "serve": "^14.2.1"
